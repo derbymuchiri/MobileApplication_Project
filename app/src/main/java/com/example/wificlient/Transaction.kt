@@ -1,0 +1,12 @@
+package com.example.wificlient.data.model
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "transactions")
+data class Transaction(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    val amount: Double,
+    val timestamp: Long // We store the date/time as a number (milliseconds)
+)

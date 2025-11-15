@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WifiClient</string>
+    <string name="spinner_router_prompt">Select Routers</string>
+    <string name="spinner_plans_prompt">Select Plans</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/tvVoucherId"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="165"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvVoucherType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hotspot"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvVoucherPlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="24Hrs Unlimited"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvVoucherCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="9191E"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvVoucherStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Used"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="#FFEBEE"
+        android:textColor="#D32F2F"
+        android:textSize="14sp"/>
+
+</LinearLayout>
