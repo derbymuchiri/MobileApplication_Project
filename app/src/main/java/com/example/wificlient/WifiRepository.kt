@@ -1,8 +1,6 @@
 package com.example.wificlient
 
 import androidx.lifecycle.LiveData
-import com.example.wificlient.AppDao
-import com.example.wificlient.Voucher
 
 class WifiRepository(private val appDao: AppDao) {
 

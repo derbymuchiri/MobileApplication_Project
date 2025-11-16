@@ -55,6 +55,7 @@ class VoucherFragment : Fragment() {
         btnPrint = view.findViewById(R.id.btnPrint)
         addVoucherLayout = view.findViewById(R.id.addVoucherLayout)
         typeGroup = view.findViewById(R.id.typeGroup)
+        spinnerRouters = view.findViewById(R.id.SpinnerRouter)
         spinnerPlans = view.findViewById(R.id.plansSpinner)
         etNumber = view.findViewById(R.id.etNumber)
         etLength = view.findViewById(R.id.etLength)
