@@ -12,16 +12,16 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val repository: WifiRepository
 
-    private val _todayIncome = MutableLiveData("Ksh 0.00")
+    private val _todayIncome = MutableLiveData("Ksh 256,890")
     val todayIncome: LiveData<String> = _todayIncome
 
-    private val _monthIncome = MutableLiveData("Ksh 0.00")
+    private val _monthIncome = MutableLiveData("Ksh 1,568,945")
     val monthIncome: LiveData<String> = _monthIncome
 
-    private val _activeUsers = MutableLiveData("0")
+    private val _activeUsers = MutableLiveData("1,567")
     val activeUsers: LiveData<String> = _activeUsers
 
-    private val _totalUsers = MutableLiveData("0")
+    private val _totalUsers = MutableLiveData("10,675")
     val totalUsers: LiveData<String> = _totalUsers
 
     init {
