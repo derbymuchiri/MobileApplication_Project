@@ -1,8 +1,8 @@
-package com.example.wificlient.data.repository
+package com.example.wificlient
 
 import androidx.lifecycle.LiveData
-import com.example.wificlient.data.db.AppDao
-import com.example.wificlient.data.model.Voucher
+import com.example.wificlient.AppDao
+import com.example.wificlient.Voucher
 
 class WifiRepository(private val appDao: AppDao) {
 
@@ -16,9 +16,6 @@ class WifiRepository(private val appDao: AppDao) {
     suspend fun deleteUsedVouchers() {
         appDao.deleteUsedVouchers()
     }
-
-    // --- Dashboard Stats ---
-
     suspend fun getActiveUsersCount(): Int {
         return appDao.getActiveUsersCount()
     }
@@ -28,10 +25,10 @@ class WifiRepository(private val appDao: AppDao) {
     }
 
     suspend fun getTodayIncome(todayStart: Long): Double {
-        return appDao.getTodayIncome(todayStart) ?: 0.0 // Return 0.0 if null
+        return appDao.getTodayIncome(todayStart) ?: 0.0
     }
 
     suspend fun getMonthIncome(monthStart: Long): Double {
-        return appDao.getMonthIncome(monthStart) ?: 0.0 // Return 0.0 if null
+        return appDao.getMonthIncome(monthStart) ?: 0.0
     }
 }

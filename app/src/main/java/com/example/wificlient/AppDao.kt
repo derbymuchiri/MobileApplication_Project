@@ -1,11 +1,11 @@
-package com.example.wificlient.data.db
+package com.example.wificlient
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.wificlient.data.model.Voucher
+
 
 @Dao
 interface AppDao {

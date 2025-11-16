@@ -1,12 +1,10 @@
-package com.example.wificlient.ui.dashboard
+package com.example.wificlient
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.wificlient.data.model.AppDatabase
-import com.example.wificlient.data.repository.WifiRepository
 import kotlinx.coroutines.launch
 import java.util.Calendar
 

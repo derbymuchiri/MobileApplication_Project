@@ -1,12 +1,9 @@
-package com.example.wificlientmanagement
+package com.example.wificlient
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.vouchers.VoucherFragment
-import com.example.wificlient.DashboardFragment
-import com.example.wificlient.R
 
 class AdminDashboardActivity : AppCompatActivity() {
 

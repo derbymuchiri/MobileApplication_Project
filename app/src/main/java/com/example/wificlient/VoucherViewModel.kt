@@ -1,12 +1,9 @@
-package com.example.wificlient.ui.vouchers
+package com.example.wificlient
 
 import android.app.Application
-import com.example.wificlient.data.model.AppDatabase
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.wificlient.data.model.Voucher
-import com.example.wificlient.data.repository.WifiRepository
 import kotlinx.coroutines.launch
 
 class VoucherViewModel(application: Application) : AndroidViewModel(application) {

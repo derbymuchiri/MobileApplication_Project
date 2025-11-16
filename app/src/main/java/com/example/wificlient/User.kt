@@ -1,4 +1,4 @@
-package com.example.wificlient.data.model
+package com.example.wificlient
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

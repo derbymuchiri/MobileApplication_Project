@@ -1,4 +1,4 @@
-package com.example.vouchers
+package com.example.wificlient
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,9 +17,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wificlient.R
-import com.example.wificlient.VoucherAdapter
-import com.example.wificlient.ui.vouchers.VoucherViewModel
+
 
 class VoucherFragment : Fragment() {
 

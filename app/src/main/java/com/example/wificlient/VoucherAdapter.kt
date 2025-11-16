@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wificlient.data.model.Voucher
+import com.example.wificlient.Voucher
 
 class VoucherAdapter : RecyclerView.Adapter<VoucherAdapter.VoucherViewHolder>() {
 

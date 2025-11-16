@@ -11,17 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WifiClient">
+
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_name"
+            android:theme="@style/Theme.WifiClient" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="true"
             android:theme="@style/Theme.WifiClient">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
+    </application>
 </manifest>

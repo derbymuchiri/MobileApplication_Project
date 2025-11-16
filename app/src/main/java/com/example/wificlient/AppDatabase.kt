@@ -1,10 +1,10 @@
-package com.example.wificlient.data.model
+package com.example.wificlient
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.wificlient.data.db.AppDao
+
 
 // 1. Add User::class and Transaction::class
 @Database(entities = [Voucher::class, User::class, Transaction::class], version = 2, exportSchema = false)
