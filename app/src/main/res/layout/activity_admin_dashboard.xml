@@ -5,7 +5,6 @@
     android:orientation="horizontal"
     android:background="#FFFFFF">
 
-    <!-- Sidebar -->
     <LinearLayout
         android:id="@+id/sidebar"
         android:layout_width="180dp"
@@ -34,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
+
         <Button
             android:id="@+id/btnVouchers"
             android:text="Vouchers"
@@ -44,13 +44,36 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
-        <!-- Spacer to push Logout to bottom -->
+
+        <Button
+            android:id="@+id/btnClients"
+            android:text="Clients"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A1B9A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+
+        <Button
+            android:id="@+id/btnTransactions"
+            android:text="Transactions"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A1B9A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <!-- Logout Button -->
+
         <Button
             android:id="@+id/btnLogout"
             android:text="Logout"
@@ -62,7 +85,6 @@
 
     </LinearLayout>
 
-    <!-- Main Fragment Area -->
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="0dp"

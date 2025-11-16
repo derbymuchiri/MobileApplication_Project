@@ -20,13 +20,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <!-- Grid for the stats cards -->
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
-            android:rowCount="2"
+            android:rowCount="3"
             android:useDefaultMargins="true">
 
+            <!-- Card 1: Today's Income -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -34,25 +36,22 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:contentPadding="16dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Today's Income"
                         android:textSize="16sp"
                         android:textColor="#666666"/>
-
                     <TextView
                         android:id="@+id/tvTodayIncome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ksh 234,000"
+                        android:text="Ksh 245,587"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="#4A148C"
@@ -60,6 +59,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card 2: Income This Month -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -67,25 +67,22 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:contentPadding="16dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Income This Month"
                         android:textSize="16sp"
                         android:textColor="#666666"/>
-
                     <TextView
                         android:id="@+id/tvMonthIncome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ksh 1,200,000"
+                        android:text="Ksh 1,864,789"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="#4A148C"
@@ -93,6 +90,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card 3: Active Users -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,25 +98,22 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:contentPadding="16dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Active Users"
                         android:textSize="16sp"
                         android:textColor="#666666"/>
-
                     <TextView
                         android:id="@+id/tvActiveUsers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="200"
+                        android:text="400"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="#4A148C"
@@ -126,6 +121,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Card 4: Total Users -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -133,29 +129,87 @@
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:contentPadding="16dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Total Users"
                         android:textSize="16sp"
                         android:textColor="#666666"/>
-
                     <TextView
                         android:id="@+id/tvTotalUsers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1,659"
+                        android:text="3,600"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:textColor="#4A148C"
                         android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 5: Most Active Client -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:contentPadding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most Active Client"
+                        android:textSize="16sp"
+                        android:textColor="#666666"/>
+                    <TextView
+                        android:id="@+id/tvMostActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeniffer Odhiambo"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#4A148C"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 6: Overdue Invoices -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:contentPadding="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overdue Invoices"
+                        android:textSize="16sp"
+                        android:textColor="#666666"/>
+                    <TextView
+                        android:id="@+id/tvOverdueInvoices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="67"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#D32F2F" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

@@ -84,7 +84,7 @@ class VoucherFragment : Fragment() {
         }
 
         btnPrint.setOnClickListener {
-            Toast.makeText(context, "Print function not implemented.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Cannot find a nearby printer.", Toast.LENGTH_SHORT).show()
         }
 
         return view

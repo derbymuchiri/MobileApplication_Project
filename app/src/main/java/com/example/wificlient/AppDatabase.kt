@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 
 // 1. Add User::class and Transaction::class
-@Database(entities = [Voucher::class, User::class, Transaction::class], version = 2, exportSchema = false)
+@Database(entities = [Voucher::class, User::class, Transaction::class, Invoice::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun appDao(): AppDao
@@ -23,9 +23,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "wifi_client_database"
                 )
-                    // 2. Add this fallback. It will clear the database on version change.
-                    // This is easy for development.
-                    .fallbackToDestructiveMigration()
+                    .fallbackToDestructiveMigration() // This will clear the old database
                     .build()
                 INSTANCE = instance
                 instance

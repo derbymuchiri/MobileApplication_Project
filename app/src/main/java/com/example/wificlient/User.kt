@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "users")
 data class User(
     @PrimaryKey
-    val userId: String, // A unique ID for the user
+    val userId: String,
     val name: String,
-    val status: String // "Active" or "Inactive"
+    val status: String, // "Active" or "Inactive"
+    val dataUsage: Long = 0L // <-- ADD THIS NEW FIELD
 )
